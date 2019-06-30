@@ -36,6 +36,6 @@ class Post
 
     file_time = @created_at.strftime('%Y-%m-%d_%H-%M-%S')
 
-    "#{current_path}/#{self.class.name}_#{file_time}.txt"
+    "#{current_path}/../post/#{self.class.name}_#{file_time}.txt"
   end
 end
